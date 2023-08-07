@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Weather API</title>
+</head>
+
+<body>
+    <div class="loader-div">
+        <span class="loader">
+          <span></span>
+          <span></span>
+        </span>
+      </div>
+    <div class="container">
+        <form class="searchBox">
+            <input type="text" class="search" placeholder="Search for city">
+            <button class="btn" type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+        <div>
+            <span class="error">Invalid City Name</span>
+        </div>
+        <div class="weather">
+            <div class="title">
+                <div class="weatherItems">
+                    <h1 class="name">Gyula</h1>
+                    <h1 class="time">8:00:00 AM</h1>
+                </div>
+            </div>
+            <div class="description">
+                <div class="weatherItems">
+                    <div>
+                    <span class="temp">0</span><span class="tempUnit"></span>
+                </div>
+                <div>
+                    <span class="feelsLike">Feels like 0</span><span class="tempUnit"></span>
+                </div>
+                </div>
+                <div class="weatherItems">
+                    <span class="clouds">Scattered Cloud</span>
+                    <span class="cloudsImg">
+                        <i class="fa-solid fa-cloud"></i>
+                    </span>
+                </div>
+                <div class="weatherItems">
+                    <div >
+                        <span class="windSpeed">Wind speed : 6.78 </span><span class="speed">kph</span>
+                    </div>
+                </div>
+                <div class="weatherItems">
+                    <div >
+                        <span class="humidity">Humidity : 71%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="unit">
+            <button>Celcius / Farenhiet</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
